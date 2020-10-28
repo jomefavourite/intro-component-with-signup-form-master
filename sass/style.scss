@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$blue: hsl(248, 32%, 49%);
+$darkBlue: hsl(249, 10%, 26%);
+$grayishBlue: hsl(246, 25%, 77%);
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("../images/bg-intro-mobile.png");
+  background-color: $red !important;
+}
+
+h1 {
+  font-size: clamp(30px, 5vw, 40px);
+}
+
+input {
+  padding: 25px 20px !important;
+}
+
+.btn-secondary {
+  background: $blue !important;
+}
+
+.btn-primary {
+  background: $green !important;
+  padding: 10px 0;
+  border-color: inherit;
+}
+
+.rounded {
+  border-radius: 10px !important;
+}
+
+.mt-6 {
+  margin-top: 4rem;
+}
+
+.shadow {
+  box-shadow: 0 8px 1px hsla(249, 10%, 26%, 0.26) !important;
+}
+.shadow-green {
+  box-shadow: 0 4px 1px hsl(154, 57%, 41%) !important;
+}
+
+button {
+  border: 0 !important;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  background-image: url("../images/icon-error.svg");
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 992px) {
+  body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+    background-image: url("../images/bg-intro-desktop.png");
+  }
+
+  h1 {
+    max-width: 450px;
+  }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <style></style>
+  </head>
+  <body class="">
+    <main class="container mt-6 mb-6">
+      <div class="row">
+        <div
+          class="text-center text-white col-lg-6 text-lg-left m-lg-auto mb-5"
+        >
+          <h1 class="font-weight-bold font-size-1">
+            Learn to code by watching others
+          </h1>
+
+          <p>
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="btn-secondary p-4 rounded mb-4 shadow text-center">
+            <p class="m-0 font-weight-bold">
+              Try it free 7 days
+              <span class="font-weight-normal">then $20/mo. thereafter</span>
+            </p>
+          </div>
+
+          <div class="card p-3 rounded shadow">
+            <form class="needs-validation" novalidate>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name=""
+                  class="form-control"
+                  placeholder="First Name"
+                  required="true"
+                />
+                <small class="invalid-feedback text-right"
+                  >First Name cannot be empty</small
+                >
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="lname"
+                  class="form-control"
+                  placeholder="Last Name"
+                  required
+                />
+                <small class="invalid-feedback text-right"
+                  >First Name cannot be empty</small
+                >
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Email Address"
+                  required
+                />
+                <small class="invalid-feedback text-right"
+                  >Looks like this is not an email</small
+                >
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  name="pwd"
+                  class="form-control"
+                  placeholder="Password"
+                  required
+                />
+                <small class="invalid-feedback text-right"
+                  >Password cannot be empty</small
+                >
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary d-block w-100 shadow-green"
+              >
+                Claim your free trial
+              </button>
+            </form>
+
+            <p class="mt-3 small text-center">
+              By clicking the button, you are agreeing to our
+              <span class="text-danger font-weight-bold"
+                >Terms and Services</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-3">
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/jomefavourite">Jome Favourite</a>.
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

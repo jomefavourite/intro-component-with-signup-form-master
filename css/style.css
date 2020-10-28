@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("../images/bg-intro-mobile.png");
+  background-color: #ff7a7a !important;
+}
+
+h1 {
+  font-size: clamp(30px, 5vw, 40px);
+}
+
+input {
+  padding: 25px 20px !important;
+}
+
+.btn-secondary {
+  background: #6055a5 !important;
+}
+
+.btn-primary {
+  background: #38cc8c !important;
+  padding: 10px 0;
+  border-color: inherit;
+}
+
+.rounded {
+  border-radius: 10px !important;
+}
+
+.mt-6 {
+  margin-top: 4rem;
+}
+
+.shadow {
+  box-shadow: 0 8px 1px rgba(62, 60, 73, 0.26) !important;
+}
+
+.shadow-green {
+  box-shadow: 0 4px 1px #2da470 !important;
+}
+
+button {
+  border: 0 !important;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  background-image: url("../images/icon-error.svg");
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 992px) {
+  body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: url("../images/bg-intro-desktop.png");
+  }
+  h1 {
+    max-width: 450px;
+  }
+}
